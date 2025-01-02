@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <meta name="msapplication-TileImage" content="favicon.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realizacje</title>
+    <link rel="stylesheet" href="style-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="menu-reveal" id="btn"></button>
+      <ul class="menu hidden">
+        <li><a id="close-onclick" href="index.html">Home</a></li>
+        <li><a id="close-onclick" href="oferta.html">Oferta</a></li>
+        <li>
+          <a id="close-onclick" href="realizacje.html">Realizacje</a>
+        </li>
+        <li><a id="close-onclick" href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="darmowa-wycena" href="#form-wycena"> Darmowa Wycena </a>
+
+    <section class="showcase">
+      <div class="container card show">
+        <div class="box-text fade-in">
+          <h1>▶︎ MFC STUDIO</h1>
+          <p>
+            Przygotowanie projektu w Adobe XD. Zakodowanie strony w HTML, CSS i
+            JavaScript. Wdrożenie responsywności. Zoptymalizowanie SEO.
+            Przygotowanie unikalnych grafik, logo i postów na social media oraz implementacja strony.
+          </p>
+
+          <input
+            class="submit-button margin-top"
+            type="button"
+            value="Odwiedź stronę"
+            onclick="window.open('https://www.mfcstudio.pl', '_blank');"
+          />
+        </div>
+        <div class="box-gif fade-in-two">
+          <img src="mfcstudio-gif.gif" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="showcase">
+      <div class="container-left card">
+        <div class="box-text">
+          <h1 class="test2 card2">▶︎ Telesystem Spj.</h1>
+          <p class="test2 card2">
+            Przygotowanie projektu strony internetowej w Adobe XD. Stworzenie
+            strony w Wordpressie. Zoptymalizowanie SEO. Przygotowanie unikalnych
+            grafik i implementacja strony.
+          </p>
+          <input
+            class="submit-button margin-top"
+            type="button"
+            value="Odwiedź stronę"
+            onclick="window.open('https://www.telesystemspj.pl', '_blank');"
+          />
+        </div>
+        <div class="box-gif"><img src="nagranie-telesystem.gif" alt="" /></div>
+      </div>
+    </section>
+
+    <section class="form-submition">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="49b6d729-2f0f-4cb9-9f58-72e0d5f38b4b"
+        />
+        <input type="hidden" name="subject" value="Nowy mail ze strony!" />
+        <input type="hidden" name="from_name" value="BartoszChmielecki.com" />
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://bartoszchmielecki-com-986220.hostingersite.com"
+        />
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <div class="formgroup" id="name-form">
+          <label for="name">Imię ▼</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="formgroup" id="email-form">
+          <label for="email">E-mail ▼</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="formgroup" id="message-form">
+          <label for="message">Wiadomość ▼</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="h-captcha" data-captcha="true"></div>
+        <input class="submit-button" type="submit" value="Wyślij" />
+      </form>
+      <div class="form-text" id="form-wycena">
+        <h1 class="test2 card2">▶︎ Darmowa Wycena</h1>
+        <p class="test2 card2">
+          Potrzebujesz strony internetowej? Napisz do mnie, opisz czego
+          potrzebujesz, a ja przygotuję dla Ciebie wycenę – szybko, bez
+          zobowiązań i zupełnie za darmo. Skontaktuję się z Tobą w ciągu 24
+          godzin!
+        </p>
+      </div>
+    </section>
+    <section id="kontakt" class="fotter">
+      <h3>Kontakt</h3>
+      <hr />
+      <p>+48 533 320 515</p>
+      <p>bartoszchmieleckikontakt@gmail.com</p>
+    </section>
+    <div class="loader"></div>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".absolute-absolute").fadeOut("slow");
+      });
+    </script>
+  </body>
+</html>
